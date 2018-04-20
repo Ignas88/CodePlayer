@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePlayer</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+
+            CodePlayer
+
+        </div>
+
+        <div id="buttonContainer">
+
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="javaScript">JavaScript</div>
+            <div class="toggleButton active" id="output">Output</div>
+
+        </div>
+
+    </div>
+
+    <div id="bodyContainer">
+
+        <textarea id="htmlPanel" class="panel"><p>Hello</p></textarea>
+
+        <textarea id="cssPanel" class="panel hidden">p { color: blue; }</textarea>
+
+        <textarea id="javaScriptPanel" class="panel hidden">alert("hi there");</textarea>
+
+        <iframe id="outputPanel" class="panel"></iframe>
+
+    </div>
+
+
+
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
